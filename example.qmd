@@ -1,0 +1,45 @@
+---
+title: Orcid Template
+subtitle: with affiliation
+date: last-modified
+authors:
+  - name: Dianyi Yang
+    email: d.yang17@lse.ac.uk
+    orcid: 0009-0004-4652-3429
+    affiliations:
+      - ref: lse
+      - ref: sec
+    correspondence: true
+    equal-contributor: true
+  - name: Yang Dianyi 
+    orcid: 0009-0004-4652-3429
+    affiliations: 
+      - ref: lse
+  - name: Someone else
+    affiliations:
+      - ref: lse
+      - ref: sec
+    orcid: 0009-0009-9108-5436
+    equal-contributor: true
+
+affiliations:
+  - id: lse
+    name: London School of Economics and Political Science
+  - id: sec
+    name: Second Institute
+format:
+  #native: default
+  #docx: default
+  orcid-pdf:
+    keep-tex: true
+bibliography: references.bib
+csl: extra/apa.csl
+abstract: This is an abstract
+---
+\keywords{a,b,c}
+
+## Brings Quarto's Standardized Authors- & Affiliations-Block to docx-Documents
+
+I will cite @kong2023 as an example.
+
+# References
