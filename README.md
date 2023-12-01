@@ -10,7 +10,7 @@ This will install the extension and create an example qmd file that you can use 
 
 ## Using
 
-This project builds on kasper/authors-block and add the orcid feature to the pdf format.
+This project builds on kasper/authors-block and adds the orcid link feature to the pdf format.
 
 ## Format Options
 
