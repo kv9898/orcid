@@ -32,14 +32,19 @@ format:
   #docx: default
   orcid-pdf:
     keep-tex: true
+    number-sections: true
 bibliography: references.bib
 csl: extra/apa.csl
-abstract: This is an abstract
+abstract: This is an abstract.
+keywords: a,b,c
 ---
-\keywords{a,b,c}
-
-## Brings Quarto's Standardized Authors- & Affiliations-Block to docx-Documents
+# Brings Quarto's Standardized Authors- & Affiliations-Block to docx-Documents
 
 I will cite @kong2023 as an example.
 
-# References
+# References {.unnumbered}
+::: {#refs}
+:::
+
+\appendix
+# Some Appendix {.appendix}

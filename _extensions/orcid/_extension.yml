@@ -13,5 +13,16 @@ contributes:
       filters:
         - authors-block.lua
     pdf:
+      documentclass: scrartcl
+      papersize: letter
       include-in-header: header.tex
+      template-partials:
+        - before-body.tex
+      geometry:
+        - top=30mm
+        - left=30mm
+        - right=30mm
+        - heightrounded
+      linkcolor: blue
+      link-citations: true
       
