@@ -36,15 +36,18 @@ format:
 bibliography: references.bib
 csl: extra/apa.csl
 abstract: This is an abstract.
-keywords: a,b,c
+keywords: a, b, c
 ---
-# Brings Quarto's Standardized Authors- & Affiliations-Block to docx-Documents
 
-I will cite @kong2023 as an example.
+# Introduction
+
+@kapsner2023 brings Quarto's Standardized Authors- & Affiliations-Block to docx-Documents. I add the orcid link and keywords functionalities to pdf documents.
 
 # References {.unnumbered}
+
 ::: {#refs}
 :::
 
 \appendix
+
 # Some Appendix {.appendix}

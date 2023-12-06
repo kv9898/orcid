@@ -10,11 +10,11 @@ This will install the extension and create an example qmd file that you can use 
 
 ## Using
 
-This project builds on kasper/authors-block and add the orcid and keywords features to the pdf format.
+This project builds on [kasper/authors-block](https://github.com/kapsner/authors-block) and add the orcid and keywords features to the pdf format.
 
 ## Format Options
 
-Essentially the same as kasper/authors-block, just that orcid numbers will be displayed through logos with hyperlinks and pdf format.
+Essentially the same as [kasper/authors-block](https://github.com/kapsner/authors-block), just that orcid numbers will be displayed through logos with hyperlinks and keywords for the pdf format.
 
 ## Example
 

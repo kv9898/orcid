@@ -5,7 +5,7 @@
 %
 \documentclass[
   letterpaper,
-]{scrartcl}
+  abstract=true]{scrartcl}
 
 \usepackage{amsmath,amssymb}
 \usepackage{iftex}
@@ -172,7 +172,7 @@
 \hypersetup{
   pdftitle={Orcid Template},
   pdfauthor={, , and },
-  pdfkeywords={a,b,c},
+  pdfkeywords={a, b, c},
   colorlinks=true,
   linkcolor={blue},
   filecolor={Maroon},
@@ -200,9 +200,9 @@ else~\orcidlink{0009-0009-9108-5436}\textsuperscript{$\dagger{}$,1,2}}
 This is an abstract.
 \end{abstract}
 \begin{center}
-\keywords{a,b,c}
+\keywords{a, b, c}
 \end{center}
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, enhanced, boxrule=0pt, interior hidden, borderline west={3pt}{0pt}{shadecolor}, breakable, sharp corners]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, interior hidden, borderline west={3pt}{0pt}{shadecolor}, breakable, enhanced, sharp corners, boxrule=0pt]}{\end{tcolorbox}}\fi
 
 \textsuperscript{$\dagger{}$}
 These authors contributed equally to this work.
@@ -210,12 +210,12 @@ These authors contributed equally to this work.
 \textsuperscript{1} London School of Economics and Political Science\\
 \textsuperscript{2} Second Institute
 
-\hypertarget{brings-quartos-standardized-authors--affiliations-block-to-docx-documents}{%
-\section{Brings Quarto's Standardized Authors- \& Affiliations-Block to
-docx-Documents}\label{brings-quartos-standardized-authors--affiliations-block-to-docx-documents}}
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
 
-I will cite Kong et al. (\protect\hyperlink{ref-kong2023}{2023}) as an
-example.
+kapsner (\protect\hyperlink{ref-kapsner2023}{2023}) brings Quarto's
+Standardized Authors- \& Affiliations-Block to docx-Documents. I add the
+orcid link and keywords functionalities to pdf documents.
 
 \hypertarget{references}{%
 \section*{References}\label{references}}
@@ -223,11 +223,9 @@ example.
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-kong2023}{}}%
-Kong, S. T., Huang, L., \& Yang, D. (2023). Economic Impact of the South
-China Sea Dispute in China-Philippines Relations from 2012 to 2016: A
-DM-LFM analysis. \emph{SSRN Electronic Journal}.
-\url{https://doi.org/10.2139/ssrn.4623476}
+\leavevmode\vadjust pre{\hypertarget{ref-kapsner2023}{}}%
+kapsner. (2023). \emph{Authors-block {Extension} {For} {Quarto}}.
+\url{https://github.com/kapsner/authors-block}
 
 \end{CSLReferences}
 
