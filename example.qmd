@@ -33,6 +33,9 @@ format:
   orcid-pdf:
     keep-tex: true
     number-sections: true
+    cover: false #to include a coverpage, place it as "cover/cover.pdf"
+    toc: false
+    toc-newpage: false #if true, toc will be displayed on a new page
 bibliography: references.bib
 csl: extra/apa.csl
 abstract: This is an abstract.
@@ -41,7 +44,7 @@ keywords: a, b, c
 
 # Introduction
 
-@kapsner2023 brings Quarto's Standardized Authors- & Affiliations-Block to docx-Documents. I add the orcid link and keywords functionalities to pdf documents.
+@kapsner2023 brings Quarto's Standardized Authors- & Affiliations-Block to docx-Documents. I add the orcid link, keywords, cover page and refined toc functionalities to pdf documents.
 
 # References {.unnumbered}
 

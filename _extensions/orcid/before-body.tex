@@ -1,3 +1,6 @@
+$if(cover)$
+\includepdf[pages=-]{cover/cover.pdf}
+$endif$
 $if(has-frontmatter)$
 \frontmatter
 $endif$
@@ -17,4 +20,8 @@ $if(keywords)$
 \keywords{$keywords$}
 \end{center}
 $endif$
+$endif$
+
+$if(toc-newpage)$
+\newpage
 $endif$
