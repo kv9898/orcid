@@ -25,3 +25,8 @@ $endif$
 $if(toc-newpage)$
 \newpage
 $endif$
+
+$if(header)$
+\KOMAoptions{headsepline}
+\rohead{$header$}
+$endif$
