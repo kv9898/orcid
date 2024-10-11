@@ -27,3 +27,4 @@ The compiled pdf looks like this:
 ## Additional YAML Options
 
 - `header`: Type the header you want to display from second page onward.
+- `toc-new page`: Can be `true` or `false`, indicating whether or not you want a new page for the table of contents, given that `toc: true`.
