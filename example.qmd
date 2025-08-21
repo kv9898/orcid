@@ -40,7 +40,9 @@ bibliography: references.bib
 csl: extra/apa.csl
 abstract: This is an abstract.
 keywords: a, b, c
+acknowledgements: This is an acknowledgement.
 ---
+\newpage
 
 # Introduction
 
