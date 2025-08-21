@@ -28,3 +28,4 @@ The compiled pdf looks like this:
 
 - `header`: Type the header you want to display from second page onward.
 - `toc-newpage`: Can be `true` or `false`, indicating whether or not you want a new page for the table of contents, given that `toc: true`.
+- `acknowledgements`: Type the acknowledgements you want to display as an unnumbered footnote.
