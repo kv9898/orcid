@@ -37,28 +37,25 @@ local create_authors_inlines = from_authors.create_authors_inlines
 -- This is the main-part
 function Pandoc(doc)
   local meta = doc.meta
-  local body = List:new{}
-  
+  local blocks = List:new{}
+
   local mark = function (mark_name) return default_marks[mark_name] end
 
-  body:extend(create_equal_contributors_block(meta.authors, mark) or {})
-  body:extend(create_affiliations_blocks(meta.affiliations) or {})
-  body:extend(create_correspondence_blocks(meta.authors, mark) or {})
-  body:extend(doc.blocks)
-  
+  blocks:extend(create_equal_contributors_block(meta.authors, mark) or {})
+  blocks:extend(create_affiliations_blocks(meta.affiliations) or {})
+  blocks:extend(create_correspondence_blocks(meta.authors, mark) or {})
+
+  -- expose as metadata so the template can place it
+  meta["authors-block"] = pandoc.MetaBlocks(blocks)
+
+  -- (keep your existing normalization code)
   for _i, author in ipairs(meta.authors) do
     author.test = is_corresponding_author(author)
   end
-  
   meta.affiliations = normalize_affiliations(meta.affiliations)
   meta.author = meta.authors:map(normalize_authors(meta.affiliations))
-  
-  -- Overwrite authors with formatted values. We use a single, formatted
-  -- string for most formats. LaTeX output, however, looks nicer if we
-  -- provide a authors as a list.
   meta.author = pandoc.MetaInlines(create_authors_inlines(meta.author, mark))
-  -- Institute info is now baked into the affiliations block.
   meta.affiliations = nil
-  
-  return pandoc.Pandoc(body, meta)
+
+  return pandoc.Pandoc(doc.blocks, meta)
 end

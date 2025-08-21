@@ -10,6 +10,12 @@ $if(beamer)$
 $else$
 \maketitle
 $endif$
+$endif$
+
+$if(authors-block)$
+$authors-block$
+$endif$
+
 $if(abstract)$
 \begin{abstract}
 $abstract$
@@ -19,7 +25,6 @@ $if(keywords)$
 \begin{center}
 \keywords{$keywords$}
 \end{center}
-$endif$
 $endif$
 
 $if(acknowledgements)$
