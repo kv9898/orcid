@@ -4,27 +4,27 @@ subtitle: with affiliation
 date: last-modified
 authors:
   - name: Dianyi Yang
-    email: d.yang17@lse.ac.uk
+    email: dianyi.yang@politics.ox.ac.uk
     orcid: 0009-0004-4652-3429
     affiliations:
-      - ref: lse
+      - ref: ox
       - ref: sec
-    correspondence: true
+    corresponding: true
     equal-contributor: true
   - name: Yang Dianyi 
     orcid: 0009-0004-4652-3429
     affiliations: 
-      - ref: lse
+      - ref: ox
   - name: Someone else
     affiliations:
-      - ref: lse
+      - ref: ox
       - ref: sec
     orcid: 0009-0009-9108-5436
     equal-contributor: true
 
 affiliations:
-  - id: lse
-    name: London School of Economics and Political Science
+  - id: ox
+    name: Department of Politics and International Relations, University of Oxford
   - id: sec
     name: Second Institute
 format:
@@ -42,7 +42,6 @@ abstract: This is an abstract.
 keywords: a, b, c
 acknowledgements: This is an acknowledgement.
 ---
-\newpage
 
 # Introduction
 
