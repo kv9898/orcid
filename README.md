@@ -1,12 +1,23 @@
 # Orcid Format
 
+
 ## Installing
 
-``` bash
+You can install this extension in two ways:
+
+**Option 1: Use as a template (creates an example qmd file):**
+
+```bash
 quarto use template kv9898/orcid
 ```
 
-This will install the extension and create an example qmd file that you can use as a starting place for your article.
+**Option 2: Add as a project extension (does not create example file):**
+
+```bash
+quarto add kv9898/orcid
+```
+
+Both methods will install the extension. The `use` command also creates an example qmd file you can use as a starting place for your article.
 
 ## Using
 
