@@ -33,7 +33,7 @@ format:
   orcid-pdf:
     keep-tex: true
     number-sections: true
-    cover: false #to include a coverpage, place it as "cover/cover.pdf"
+    cover: false # path to cover page, e.g. "cover/cover.pdf"
     toc: false
     toc-newpage: false #if true, toc will be displayed on a new page
 bibliography: references.bib
